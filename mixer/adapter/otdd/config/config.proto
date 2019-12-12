@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+// config for otdd
+package adapter.otdd.onfig;
+
+import "gogoproto/gogo.proto";
+
+option go_package="config";
+
+// config for otdd
+message Params {
+    // the addr of otdd server
+    string addr = 1;
+}
